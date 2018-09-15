@@ -1,3 +1,4 @@
 module.exports = function warmup(temperature) {
-  // your implementation here
+  const intTemperature = parseInt(temperature);
+  return intTemperature !== NaN ? (temperature || 0) * 9 / 5 + 32 : NaN;
 };
